@@ -1,0 +1,48 @@
+
+li {
+    float: left;
+}
+
+li p:hover {
+/*    background-color: orange;
+    color: white;
+    box-shadow: 5px 3px 2px black;
+    text-shadow: 4px 4px 4px black;
+*/}
+
+.title {
+/*    color: black;
+    font-family: font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+    font-size: 100px;
+*/}
+
+
+.twitter {
+    
+}
+
+.youtube {
+     
+}
+
+/* ------ Kiecker's CSS ------ */
+
+#AHS_BottomContent {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: #FF8C00;
+}
+
+#AHS_MainContent p {
+    
+    padding-left: 240px; 
+    padding-right: 200px;
+    padding-bottom: 30px;
+    
+}
+
+
+.navbar-nav li {
+    margin-left: 10px;
+    margin-right: 10px;
+}

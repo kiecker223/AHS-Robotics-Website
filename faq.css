@@ -1,0 +1,19 @@
+
+/* ---- Kiecker's CSS ---- */
+
+#AHS_BottomContent {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: #FF8C00;
+}
+
+#AHS_MainContent p {
+    padding-left: 240px; 
+    padding-right: 200px;
+    padding-bottom: 30px;
+}
+
+.navbar-nav li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
