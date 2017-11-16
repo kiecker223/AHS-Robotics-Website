@@ -1,48 +1,282 @@
-
-li {
-    float: left;
+body {
+    background-color: black;
 }
 
-li p:hover {
-/*    background-color: orange;
+#kContent {
+    padding-top: 60px;
+    padding-left: 30px;
+}
+
+
+/* *************************************
+        Actual css
+************************************** */
+#kContent a {
+    text-decoration: none;
+}
+
+/* *************************************
+    
+    Navbar css
+
+************************************* */
+#kNavbar a:hover {
+    background-color: #ee4444;
+    color: black;
+    transition-duration: 0.5s;
+}
+
+#kNavbar a {
+    transition-duration: 0.5s;
+}
+
+.dropdown-menu {
+    transform: translateY(-200px);
+    transition-duration: 0.4s;
+    opacity: 0;
+    display: block;
+    border: none;
+}
+
+.open .dropdown-menu {
+    transform: translateY(0px);
+    opacity: 1;
+    border: none;
+}
+
+.dropdown-menu li a {
+    
+}
+
+.navbar {
+    border: none;
+}
+
+/* *************************************
+
+    End navbar css
+
+************************************* */
+/* *************************************
+
+    Literary Store content
+
+************************************* */
+/* -- Animations for the blur and unblur -- */
+@keyframes kBlurImage {
+    from { filter: blur(0px); border: 1px solid lime; }
+    to   { filter: blur(3px); border: 1px solid red;  }
+}
+
+@keyframes kUnBlurImage {
+    from { filter: blur(3px); border: 1px solid red;  }
+    to   { filter: blur(0px); border: 1px solid lime; }
+}
+
+/* --  Hide the B.S. on hover  -- */
+.kLitContent a {
+    text-decoration: none;
     color: white;
-    box-shadow: 5px 3px 2px black;
-    text-shadow: 4px 4px 4px black;
-*/}
+}
 
-.title {
-/*    color: black;
-    font-family: font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
-    font-size: 100px;
-*/}
+.kJumbotron {
+    background-image: url(Assets/diagmonds_red_new.jpg);
+    height: 100vh;
+    color: white;
+    text-shadow: 0px 5px 6px black;
+    background-color: #555;
+}
 
+.jumbotron { 
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
 
-.twitter {
+.kTopTextContent {
+    vertical-align: center;
+    padding-top: 25vh;
+}
+
+.kAbout h1 {
+    color: white;
+    text-shadow: 0px 4px 4px black;
+    border-bottom: 2px solid white;
+    padding-bottom: 2vh;
+}
+
+.kAbout p {
+    color: white;
+    padding-bottom: 2vh
+}
+
+.kSongContent a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 0px;
+}
+
+.kExpressionRow {
+    background-color: rgba(0, 00, 00, 0.97);
+}
+
+/* Image Effects on hover and exit */
+.kLitContent a img {
+    animation-name: kBlurImage;
+    animation-duration: .4s;
     
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    border: 1px solid red;
 }
 
-.youtube {
-     
-}
-
-/* ------ Kiecker's CSS ------ */
-
-#AHS_BottomContent {
-    padding-top: 10px;
-    padding-bottom: 30px;
-    background-color: #FF8C00;
-}
-
-#AHS_MainContent p {
+.kLitContent a:hover img {
+    animation-name: kUnBlurImage;
+    animation-duration: .4s;
     
-    padding-left: 240px; 
-    padding-right: 200px;
-    padding-bottom: 30px;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    border: 1px solid lime;
+}
+
+.kStoreContainer {
+    margin-top: 0px;
+    padding-top: 0px;
+    background-image: url(Assets/placeHolderStudio2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+/*.kTopTextContent h1 {
+    color: white;
+    box-shadow: 3px 3px 3px #000;
+}
+
+
+/* Text effects on hover */
+
+.kLitContent a h2 {
+    transform: translateY(-30px);
+    color: black;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.kLitContent a:hover h2 {
+    transform: translateY(0px);
+    color: white;
+    opacity: 100;
+    transition-duration: 0.3s;
+}
+
+.kLitContent a p {
+    transform: translateY(-30px);
+    color: black;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.kLitContent a:hover p {
+    transform: translateY(0px);
+    color: white;
+    opacity: 100;
+    transition-duration: 0.3s;
+}
+
+.kLitStore {
+    color: #fff;
+}
+
+.kImageSumContainer {
+    background-image: url(Assets/placeholder1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+audio::-webkit-media-controls-panel {
+    width: calc(100% + 20%); 
+}
+
+/* --  Audio store content  -- */
+.kSongContent a img {
+    animation-name: kBlurImage;
+    animation-duration: .4s;
     
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
 }
 
-
-.navbar-nav li {
-    margin-left: 10px;
-    margin-right: 10px;
+.kSongContent a:hover img {
+    animation-name: kUnBlurImage;
+    animation-duration: .4s;
+    
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
 }
+
+/* Text effects on hover */
+
+.kSongContent {
+    background-color: #5e1;
+}
+
+.kSongContent a h2 {
+    transform: translateY(-30px);
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.kSongContent a:hover h2 {
+    transform: translateY(0px);
+    opacity: 100;
+    transition-duration: 0.3s;
+}
+
+.kSongContent a p {
+    transform: translateY(-30px);
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.kSongContent a:hover p {
+    transform: translateY(0px);
+    opacity: 100;
+    transition-duration: 0.3s;
+}
+
+.kSongContent a button {
+    transform: translateY(-30px);
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.kSongContent a:hover button {
+    transform: translateY(0px);
+    opacity: 100;
+    transition-duration: 0.3s;
+}
+
+.kBuyButton {
+    transition-duration: .4s;
+    
+    background-color: #e04040;
+    border: none;
+    width: 30%;
+}
+
+.kBuyButton:hover {
+    background-color: #f04040;
+    border: none;
+    box-shadow: 0px 4px 15px black;
+    
+    transition-duration: .4s;
+}
+
+/*
+.kStoreContainer {
+    background-image: url(Assets/PlaceholderStudio.jpg);
+}
+*/
